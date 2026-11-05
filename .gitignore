@@ -1,0 +1,14 @@
+Gryffindor_note_*.md
+images/*
+!images/.gitkeep
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+build/
+dist/
+*.spec
+*.log
+.DS_Store
+Thumbs.db
