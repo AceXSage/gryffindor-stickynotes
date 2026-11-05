@@ -30,7 +30,7 @@ pause
 goto END
 :NO_PY
 echo [ERROR] Python not found on PATH.
-echo   Install Python 3.9-3.12 and tick "Add python.exe to PATH", then run this again.
+echo   Install Python 3.8+ and tick "Add python.exe to PATH", then run this again.
 goto END
 :NO_PYQT
 echo [ERROR] PyQt5 is not installed for this Python.
