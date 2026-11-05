@@ -22,11 +22,11 @@
 
 ---
 
-## 2. Pull相关流程s
+## 2. 拉取与运行
 
 ```bat
-git clone https://github.com/<your-name>/gryffindor.git
-cd gryffindor
+git clone https://github.com/AceXSage/gryffindor-stickynotes.git
+cd gryffindor-stickynotes
 
 python -m venv .venv
 .venv\Scripts\activate
@@ -34,6 +34,8 @@ pip install PyQt5 -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 python Gryffindor.py
 ```
+
+装完之后，以后直接**双击 `run.cmd`** 就能启动（它优先用目录里的 `.venv`，没有就找系统 Python，PyQt5 没装会直接把安装命令打出来）。
 
 没有 git 也行：下载 ZIP → 解压 → 从第 2 步开始。
 

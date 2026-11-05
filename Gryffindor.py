@@ -2581,8 +2581,10 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = GryffindorNote()
     if window._duplicate_exit:
-        # 已有实例在跑：它已被召唤到前台，本进程安静退出
-        sys.exit(0)
+        # 已有实例在跑：它已被召唤到前台，本进程退出并明确告知（退出码 2 便于启动器提示）
+        print("已有 Gryffindor 实例在运行（多半在系统托盘里），本次不重复打开。")
+        print("要跑这一份：托盘右键退出正在运行的那个，再启动本程序。")
+        sys.exit(2)
     window.show()
     sys.exit(app.exec_())
 
